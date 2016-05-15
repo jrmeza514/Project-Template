@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp build; node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,9 @@
   "homepage": "https://github.com/jrmeza514/Project-Template#readme",
   "dependencies": {
     "browser-sync": "^2.12.8",
-    "gulp-browserify": "^0.5.1",
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.3.1"
   }

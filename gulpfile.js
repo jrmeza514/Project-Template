@@ -4,7 +4,7 @@ const jade = require('gulp-jade');
 const browserSync = require('browser-sync').create();
 const browserify = require('gulp-browserify');
 gulp.task('default', ['sass', 'jade', 'js', 'browserify', 'watch', 'sync']);
-
+gulp.task('build', ['sass', 'jade', 'js', 'browserify']);
 
 gulp.task('sass', () => {
   gulp.src('dev/sass/**/*.scss')
